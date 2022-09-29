@@ -1,5 +1,3 @@
-import java.util.logging.Logger;
-
 public class Main {
     public static void main(String[] args) {
         /*EmailLogger emailLogger = new EmailLogger();
@@ -14,7 +12,7 @@ public class Main {
             logger.log("Log mesaji...");
         }*/
 
-        CustomerManager customerManager = new CustomerManager(new DatabaseLogger());
+        CustomerManager customerManager = new CustomerManager(new EmailLogger());
         customerManager.Add();
     }
 }
